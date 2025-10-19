@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetvi Purohit - Freelance Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; max-width: 850px; margin: 0 auto; padding: 30px 40px; line-height: 1.4; color: #1a1a1a; background: #fff; font-size: 11px; }
+        @media print { body { padding: 20px; } @page { margin: 0.4in; size: letter; } }
+
+        header { text-align: center; margin-bottom: 16px; border-bottom: 2px solid #2563eb; padding-bottom: 12px; }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.5px; }
+        .contact-info { font-size: 10px; color: #4b5563; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
+        .contact-info a { color: #2563eb; text-decoration: none; }
+        .tagline { font-size: 11.5px; font-weight: 600; margin-top: 6px; }
+
+        h2 { font-size: 13px; font-weight: 700; color: #1a1a1a; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 14px; margin-bottom: 8px; border-bottom: 1.5px solid #2563eb; padding-bottom: 3px; }
+
+        .skills-grid { display: grid; grid-template-columns: 120px 1fr; gap: 5px 12px; margin-bottom: 4px; }
+        .skill-category { font-weight: 600; }
+        .skill-items { color: #374151; line-height: 1.4; }
+
+        .project { margin-bottom: 11px; page-break-inside: avoid; }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+        .project-title { font-size: 11px; font-weight: 600; }
+        .project-meta { font-size: 9px; color: #6b7280; font-style: italic; }
+        .project-tech { font-size: 9.5px; color: #2563eb; font-weight: 500; margin-bottom: 2px; }
+        .project-points { list-style: none; padding-left: 0; margin-top: 2px; }
+        .project-points li { color: #374151; line-height: 1.45; margin-bottom: 2px; padding-left: 12px; position: relative; }
+        .project-points li:before { content: "▸"; position: absolute; left: 0; color: #2563eb; font-weight: bold; }
+
+        .achievements-list { list-style: none; padding-left: 0; }
+        .achievements-list li { color: #374151; line-height: 1.4; margin-bottom: 3px; padding-left: 12px; position: relative; }
+        .achievements-list li:before { content: "★"; position: absolute; left: 0; color: #2563eb; font-weight: bold; }
+
+        .availability { display: inline-block; background: #10b981; color: white; padding: 3px 12px; border-radius: 12px; font-size: 9px; font-weight: 600; margin-top: 6px; }
+        .pricing { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 8px; gap: 10px; }
+        .pricing-item { flex: 1; min-width: 120px; text-align: center; background: #f9fafb; padding: 12px 8px; border-radius: 8px; border: 1px solid #e5e7eb; }
+        .pricing-label { font-size: 10px; color: #6b7280; margin-bottom: 4px; font-weight: 600; }
+        .pricing-value { font-size: 13px; font-weight: 700; color: #2563eb; }
+
+        .ats-keywords { position: absolute; left: -9999px; font-size: 1px; }
+        @media print {
+    body {
+        width: 8.5in;       /* Letter size */
+        height: 11in;       /* Letter size */
+        margin: 0;
+        padding: 0.4in;
+        font-size: 10px;    /* Scale down if needed */
+    }
+    section {
+        page-break-inside: avoid;
+    }
+    .project {
+        page-break-inside: avoid;
+    }
+}
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 10px; 
+        line-height: 1.25;
+    }
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="ats-keywords">
+        Freelance Developer, Web Development, Full-Stack Developer, React.js, Node.js, Responsive Design, MVP, Landing Pages, JavaScript, Python, Rapid Delivery, Hackathon Experience, Open Source
+    </div>
+
+    <header>
+        <h1>HETVI PUROHIT</h1>
+        <div class="contact-info">
+            <span>📧 hetvirajpurohit7391@gmail.com</span>
+            <span>📱 +91 9328234331</span>
+            <span>💼 <a href="https://linkedin.com/in/hr1937" target="_blank">linkedin.com/in/hr1937</a></span>
+            <span>💻 <a href="https://github.com/HR1937" target="_blank">github.com/HR1937</a></span>
+        </div>
+        <div class="contact-info">
+            <span>🌐 <a href="https://yourportfolio.dev" target="_blank">yourportfolio.dev</a></span>
+            <span>⭐ <a href="https://fiverr.com/yourprofile" target="_blank">fiverr.com/yourprofile</a></span>
+            <span>🎯 <a href="https://upwork.com/yourprofile" target="_blank">upwork.com/yourprofile</a></span>
+        </div>
+        <div class="tagline">Freelance Full-Stack Developer | Rapid MVP Delivery | Client-Focused Solutions</div>
+        <div class="availability">🟢 Available for Freelance Projects</div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Freelance full-stack developer delivering fast, reliable web solutions for startups and small businesses. 
+            Focused on landing pages, dashboards, MVPs, and rapid prototypes. 
+            Skilled in React.js, Node.js, responsive design, and clean, maintainable code. 
+            B.Tech IT student (CPI 9.63) with hackathon experience and a strong problem-solving mindset. 
+            Committed to helping clients launch products quickly and efficiently.
+        </p>
+    </section>
+
+    <section>
+        <h2>Services & Packages</h2>
+        <div class="pricing">
+            <div class="pricing-item">
+                <div class="pricing-label">Starter Landing Page</div>
+                <div class="pricing-value">₹1,999 / $25</div>
+            </div>
+            <div class="pricing-item">
+                <div class="pricing-label">Growth Package (Up to 3 Pages)</div>
+                <div class="pricing-value">₹3,499 / $43</div>
+            </div>
+            <div class="pricing-item">
+                <div class="pricing-label">Sprint Day (24h Fix)</div>
+                <div class="pricing-value">₹999 / $12</div>
+            </div>
+        </div>
+        <p style="margin-top:8px; font-size:10.5px; color:#4b5563;">Custom projects welcome – contact for personalized quote.</p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Frontend:</div>
+            <div class="skill-items">HTML5, CSS3, JavaScript, React.js, Responsive Design, CSS Grid/Flexbox</div>
+            
+            <div class="skill-category">Backend:</div>
+            <div class="skill-items">Node.js, REST APIs, Express.js, Firebase</div>
+            
+            <div class="skill-category">Databases:</div>
+            <div class="skill-items">MongoDB, MySQL, Firebase Realtime DB</div>
+            
+            <div class="skill-category">Tools:</div>
+            <div class="skill-items">Git/GitHub, Postman, VSCode, Figma, Agile Workflow</div>
+            
+            <div class="skill-category">Specialties:</div>
+            <div class="skill-items">Rapid MVP Development, Landing Pages, Prototyping, Clean Code, Client Communication</div>
+        </div>
+    </section>
+
+    <section>
+<h2>Hackathon & Projects Highlights</h2>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">MediQueue – Hospital Queue System | DU Hacks 4.0</div>
+        <div class="project-meta">Feb 2025</div>
+    </div>
+    <div class="project-tech">JavaScript, Firebase, Real-time Updates</div>
+    <ul class="project-points">
+        <li>Real-time hospital token & queue system improving patient flow by 60%</li>
+        <li>Emergency contact feature for rapid notifications</li>
+    </ul>
+</div>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">Community Care Platform | HackOdisha 5.0</div>
+        <div class="project-meta">Sep 2025</div>
+    </div>
+    <div class="project-tech">React.js, Geolocation API</div>
+    <ul class="project-points">
+        <li>Frontend connecting senior citizens with nearby helpers (500m radius)</li>
+        <li>Implemented experience/remedy uploads with responsive design</li>
+    </ul>
+</div>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">Railway Operations Optimizer | Smart India Hackathon 2025</div>
+        <div class="project-meta">Sep 2025</div>
+    </div>
+    <div class="project-tech">JavaScript, Python, Flask, REST APIs</div>
+    <ul class="project-points">
+        <li>Analytics platform detecting operational delays, improving decision-making</li>
+        <li>Integrated ML-based root cause detection</li>
+    </ul>
+</div>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">Company Bill Approval System | Oddo Hackathon 2025</div>
+        <div class="project-meta">Oct 2025</div>
+    </div>
+    <div class="project-tech">JavaScript, Node.js, MongoDB</div>
+    <ul class="project-points">
+        <li>Modular approval workflow with real-time tracking & RBAC</li>
+        <li>Reduced approval processing time by 60%</li>
+    </ul>
+</div>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">Netflix UI Clone (Portfolio)</div>
+        <div class="project-meta">Jan 2025</div>
+    </div>
+    <div class="project-tech">HTML, CSS, Responsive Design</div>
+    <ul class="project-points">
+        <li>Pixel-perfect frontend clone showcasing UI and responsiveness skills</li>
+    </ul>
+</div>
+
+</section>
+    <section>
+        <h2>Achievements & Highlights</h2>
+        <ul class="achievements-list">
+            <li>Delivered multiple projects under 72 hours demonstrating fast execution</li>
+            <li>Hackathon experience with selected projects at Smart India Hackathon</li>
+            <li>Strong understanding of full-stack development and client-focused solutions</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education & Background</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Degree:</div>
+            <div class="skill-items">B.Tech in Information Technology, Dharmsinh Desai University (Expected 2028) | CPI: 9.63/10</div>
+            
+            <div class="skill-category">Languages:</div>
+            <div class="skill-items">English (Fluent), Hindi (Fluent), Gujarati (Native)</div>
+            
+            <div class="skill-category">Location:</div>
+            <div class="skill-items">India (GMT+5:30) | Available globally | Flexible hours</div>
+            
+            <div class="skill-category">Availability:</div>
+            <div class="skill-items">Open for freelance projects | 20-30 hours/week | Quick response guaranteed</div>
+        </div>
+    </section>
+</body>
+</html>
